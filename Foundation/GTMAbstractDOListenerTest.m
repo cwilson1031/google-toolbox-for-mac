@@ -57,7 +57,7 @@ enum {
 
 @interface TestServer : GTMAbstractDOListener<TestServerDOProtocol> {
  @private
-  GTM_WEAK id delegate_;
+  __weak id delegate_;
 }
 - (void)setDelegate:(id)delegate;
 @end

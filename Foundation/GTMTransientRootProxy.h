@@ -17,7 +17,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GTMDefines.h"
 
 // Handle (re-)connecting to a transient root proxy object via DO.
 //
@@ -69,7 +68,7 @@
 //
 @interface GTMTransientRootProxy : NSProxy {
  @protected
-  GTM_WEAK Protocol *protocol_;
+  __weak Protocol *protocol_;
   NSDistantObject *realProxy_;
 
   NSString *registeredName_;

@@ -17,7 +17,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GTMDefines.h"
 
 // GTMSignalHandler.
 //
@@ -61,7 +60,7 @@
 @interface GTMSignalHandler : NSObject {
  @private
   int signo_;
-  GTM_WEAK id target_;
+  __weak id target_;
   SEL action_;
 }
 

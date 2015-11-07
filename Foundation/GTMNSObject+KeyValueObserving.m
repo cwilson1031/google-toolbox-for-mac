@@ -62,10 +62,10 @@
 
 @interface GTMKeyValueObservingHelper : NSObject {
  @private
-  GTM_WEAK id observer_;
+  __weak id observer_;
   SEL selector_;
   id userInfo_;
-  GTM_WEAK id target_;
+  __weak id target_;
   NSString* keyPath_;
 }
 

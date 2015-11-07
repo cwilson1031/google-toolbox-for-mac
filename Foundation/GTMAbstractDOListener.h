@@ -35,7 +35,7 @@
 @interface GTMAbstractDOListener : NSObject <NSConnectionDelegate> {
  @protected
   NSString *registeredName_;
-  GTM_WEAK Protocol *protocol_;
+  __weak Protocol *protocol_;
   NSConnection *connection_;
   BOOL isRunningInNewThread_;
   BOOL shouldShutdown_;

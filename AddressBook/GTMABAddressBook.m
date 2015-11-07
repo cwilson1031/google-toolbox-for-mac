@@ -52,7 +52,7 @@ typedef struct {
 
 @interface GTMABMultiValueEnumerator : NSEnumerator {
  @private
-  GTM_WEAK ABMultiValueRef ref_;  // ref_ cached from enumeree_
+  __weak ABMultiValueRef ref_;  // ref_ cached from enumeree_
   GTMABMultiValue *enumeree_;
   unsigned long mutations_;
   NSUInteger count_;
